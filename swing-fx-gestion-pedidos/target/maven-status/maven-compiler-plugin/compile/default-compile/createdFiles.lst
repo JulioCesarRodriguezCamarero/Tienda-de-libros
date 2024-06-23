@@ -1,0 +1,7 @@
+org\grisu\swing\fx\swing\servicio\ProductoServicioImpl.class
+org\grisu\swing\fx\swing\SwingFxGestionPedidosApplication.class
+org\grisu\swing\fx\swing\presentacion\SistemaProductosFx.class
+org\grisu\swing\fx\swing\entities\Producto.class
+org\grisu\swing\fx\swing\repository\IProductoRepository.class
+org\grisu\swing\fx\swing\servicio\IProductoServicio.class
+org\grisu\swing\fx\swing\controlador\IndexControlador.class

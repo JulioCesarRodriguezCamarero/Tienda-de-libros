@@ -1,0 +1,11 @@
+1- pom agregar dependencias org.openjfx javafx-controls,javafx-fxml
+2-templates->index.FXML, footer están las opciones de text o Scene Builder
+3-     fx:controller="templates.Index" -> cambiar por la ruta de la clase Controlador
+4- crear un controlador -> indexControlador
+5- implementar Initializable
+6- paquete presentación-> click derecho JavaFx Application
+7- comentar método main
+8- Modificar clase principal de Spring boot application->Application.launch(SistemaProductosFx.class,args);
+9-Clase Sistema ProductosFx importar fábrica de Spring -> atributo ConfigurableApplicationContext
+10- comfigurar mátedo Init , se ejecuta antes del método start
+

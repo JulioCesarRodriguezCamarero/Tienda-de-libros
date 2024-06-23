@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="647.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.grisu.swing.fx.swing.controlador.IndexControlador">
+   <children>
+      <Label layoutX="424.0" layoutY="14.0" text="Listado de productos" textFill="#1f4df5">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <TableView fx:id="tareaTabla" layoutX="234.0" layoutY="73.0" onMouseClicked="#cargarTareaFormulario" prefHeight="439.0" prefWidth="647.0">
+        <columns>
+          <TableColumn fx:id="idTareaColumna" prefWidth="46.0" text="Id" />
+          <TableColumn fx:id="seccionTareaColumna" prefWidth="77.0" text="Sección" />
+            <TableColumn fx:id="articuloColumna" prefWidth="122.0" text="Articulo" />
+            <TableColumn fx:id="descripcionColumna" prefWidth="64.0" text="Descripción" />
+            <TableColumn fx:id="precioColumna" prefWidth="66.0" text="Precio" />
+            <TableColumn fx:id="fechaColumna" prefWidth="87.0" text="Fecha" />
+            <TableColumn fx:id="importadoColumna" prefWidth="91.0" text="Importado" />
+            <TableColumn fx:id="paisColumna" prefWidth="93.0" text="País" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="49.0" prefWidth="376.0">
+         <children>
+            <ComboBox fx:id="seccionesItemCombo" layoutX="25.0" layoutY="14.0" onAction="#cargaCombo" prefWidth="150.0" />
+            <ComboBox fx:id="paisesItemCombo" layoutX="212.0" layoutY="13.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-9.0" layoutY="87.0" prefHeight="413.0" prefWidth="243.0">
+         <children>
+            <Label layoutX="23.0" layoutY="6.0" text="Id" textFill="#1c4fae">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="52.0" text="Sección" textFill="#1c4fae">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="105.0" text="Articulo" textFill="#1c4fae">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="156.0" text="Descripción" textFill="#1c4fae">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="257.0" text="Fecha" textFill="#1c4fae">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="208.0" text="Precio" textFill="#1c4fae">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="24.0" layoutY="304.0" text="Importado" textFill="#1c4fae">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="32.0" layoutY="356.0" text="País" textFill="#1c4fae">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+
+            <TextField fx:id="seccionTexto" layoutX="94.0" layoutY="48.0" />
+            <TextField fx:id="articuloTexto" layoutX="94.0" layoutY="101.0" />
+            <TextField fx:id="precioTexto" layoutX="92.0" layoutY="202.0" />
+            <TextField fx:id="paisTexto" layoutX="94.0" layoutY="352.0" />
+            <TextField fx:id="idInterno" layoutX="94.0" layoutY="1.0" />
+            <TextField fx:id="descripcionTexto" layoutX="94.0" layoutY="151.0" />
+            <TextField fx:id="fechaTexto" layoutX="94.0" layoutY="251.0" />
+            <TextField fx:id="importadoTexto" layoutX="92.0" layoutY="301.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="523.0" prefHeight="110.0" prefWidth="918.0">
+         <children>
+            <Button fx:id="agregarBoton" layoutX="145.0" layoutY="43.0" mnemonicParsing="false" onAction="#agregarProducto" text="Agregar" />
+            <Button fx:id="modificarBoton" layoutX="348.0" layoutY="43.0" mnemonicParsing="false" onAction="#modificarProducto" text="Modificar" />
+            <Button fx:id="eliminarBoton" layoutX="558.0" layoutY="43.0" mnemonicParsing="false" onAction="#eliminarProducto" text="Eliminar" />
+            <Button fx:id="limpiarBoton" layoutX="760.0" layoutY="43.0" mnemonicParsing="false" onAction="#limpiarFormulario" text="Limpiar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
